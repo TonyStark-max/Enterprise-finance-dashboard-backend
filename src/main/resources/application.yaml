@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: finance-dashboard-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/zorvyn}
+    username: ${DB_USERNAME:somu}
+    password: ${DB_PASSWORD:somu1234}
+    driver-class-name: ${DB_DRIVER:org.postgresql.Driver}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+  h2:
+    console:
+      enabled: false
+
+app:
+  security:
+    jwt:
+      secret: 2b5a111491ac7b95c0492fd0088b2c91aad0619cdeb3adb304115f223f6b65e52b5a111491ac7b95
+      expiration-millis: 7200000
