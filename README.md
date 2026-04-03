@@ -437,6 +437,6 @@ Optional query parameters:
 
 ## Notes
 
-- Public registration always creates `VIEWER` users.
+- Public registration always creates `VIEWER` userss.
 - Elevated roles stay admin-managed.
 - Sample data is seeded only when the user table is empty.
